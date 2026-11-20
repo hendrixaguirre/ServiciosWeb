@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="493.0" prefWidth="1337.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.serviciosweb.controller.ClienteController">
+   <children>
+      <Label layoutX="26.0" layoutY="25.0" text="Consulta de Clientes">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button fx:id="btnConsultarClientes" layoutX="26.0" layoutY="53.0" mnemonicParsing="false" onAction="#consultarClientes" text="Consultar Clientes" />
+      <Label fx:id="lblEstado" layoutX="150.0" layoutY="57.0" text="Presione Consultar Clientes" />
+      <TableView fx:id="tblClientes" layoutX="14.0" layoutY="97.0" prefHeight="381.0" prefWidth="1311.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="57.0" text="ID" />
+          <TableColumn fx:id="colNombre" prefWidth="130.0" text="Nombre" />
+            <TableColumn fx:id="colApellido" prefWidth="104.0" text="Apellido" />
+            <TableColumn fx:id="colCorreo" prefWidth="95.0" text="Correo" />
+            <TableColumn fx:id="colTelefono" prefWidth="74.0" text="Teléfono" />
+            <TableColumn fx:id="colNacimiento" prefWidth="82.0" text="Nacimiento" />
+            <TableColumn fx:id="colPais" prefWidth="92.0" text="País" />
+            <TableColumn fx:id="colCiudad" prefWidth="94.0" text="Ciudad" />
+            <TableColumn fx:id="colDireccion" prefWidth="121.0" text="Dirección" />
+            <TableColumn fx:id="colIngreso" prefWidth="92.0" text="Ingreso anual" />
+            <TableColumn fx:id="colPuntaje" minWidth="5.0" prefWidth="112.0" text="Puntaje crediticio" />
+            <TableColumn fx:id="colDeudaPendiente" prefWidth="114.0" text="Deuda Pendiente" />
+            <TableColumn fx:id="colMontoPendiente" prefWidth="76.0" text="&lt;- Monto " />
+            <TableColumn fx:id="colEstado" prefWidth="67.0" text="Estado" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
